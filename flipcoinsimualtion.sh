@@ -29,15 +29,6 @@ then
       	(( tailsWinCount++ ))
    	fi
 	done
-	if [[ $headsWinCount -gt $tailsWinCount ]]
-	then
-   	echo "Heads Win. Total wins:"$headsWinCount
-   	echo "Heads won by "$(( $headsWinCount-$tailsWinCount ))" points."
-	else
-   	echo "Tails Win. Total wins:"$tailsWinCount"
-   	echo "Tails won by "$(( $tailsWinCount-$headsWinCount ))" points."
-	fi
-
 elif [[ $headsWinCount -gt $tailsWinCount ]]
 then
 	echo "Heads Win. Total wins:"$headsWinCount
